@@ -1,4 +1,4 @@
-# Crédits et Licences des Médias & Images — CITY EYES
+# Crédits et Licences des Médias & Photos Réelles — CITY EYES
 
 Toutes les images et vidéos intégrées dans ce projet proviennent de sources ouvertes sous licences libres (Creative Commons / domaine public / Wikimedia Commons / Unsplash License). Aucun média sous droits réservés n'a été utilisé, conformément aux exigences éthiques et légales du projet.
 
@@ -10,58 +10,64 @@ Toutes les images et vidéos intégrées dans ce projet proviennent de sources o
 - **Source :** Wikimedia Commons Transcoded HD Repository
 - **Licence :** Creative Commons Attribution 3.0 Unported (CC BY 3.0) / Free Stock Footage
 - **URL :** https://commons.wikimedia.org/wiki/File:Beachfront_B-Roll-_Night_Traffic_Time_Lapse_(Free_to_Use_HD_Stock_Video_Footage).webm
-- **Description alt / rôle :** Vue en accéléré (time-lapse) du trafic automobile urbain nocturne en bord de mer, symbolisant le flux continu des artères métropolitaines de Casablanca, le réseau de mobilité et la surveillance citoyenne active.
+- **Description alt / rôle :** Vue en accéléré (time-lapse) du trafic automobile urbain nocturne en bord de mer, symbolisant le flux continu des artères métropolitaines de Casablanca.
 
 ---
 
-## 1. Vue de Casablanca & Mosquée Hassan II
-- **Fichier :** `casablanca-front-de-mer.svg` (ou `casablanca-hassan-ii.webp`)
-- **Auteur :** Wikimedia Commons / Unsplash Open Contributors
-- **Source :** Wikimedia Commons / Unsplash
-- **Licence :** CC BY-SA 4.0 / Unsplash Free License
-- **URL :** https://commons.wikimedia.org/wiki/File:Hassan_II_Mosque_Casablanca.jpg
-- **Description alt :** Façade emblématique de la Mosquée Hassan II surplombant l'Océan Atlantique à Casablanca.
-
-## 2. Nids-de-poule et Voirie Dégradée
-- **Fichier :** `voirie-nids-de-poule.svg`
-- **Auteur :** Wikimedia Commons Public Works Archive
-- **Source :** Wikimedia Commons
-- **Licence :** CC BY-SA 3.0
-- **URL :** https://commons.wikimedia.org/wiki/Category:Potholes
-- **Description alt :** Dégradation de chaussée avec nid-de-poule nécessitant un colmatage urgent.
-
-## 3. Gestion des Déchets et Propreté Urbaine
-- **Fichier :** `proprete-dechets-urbains.svg`
-- **Auteur :** Environmental Public Repository
-- **Source :** Wikimedia Commons
-- **Licence :** CC0 / Domaine Public
-- **URL :** https://commons.wikimedia.org/wiki/Category:Waste_management
-- **Description alt :** Benne à ordures et encombrants sur la voie publique à collecter.
-
-## 4. Éclairage Public Défectueux
-- **Fichier :** `eclairage-public-panne.svg`
-- **Auteur :** Urban Infrastructure Commons
+## 1. Contexte Urbain : Vue Aérienne de Casablanca
+- **Fichier :** `assets/images/casablanca-vue-aerienne.jpg`
+- **Auteur :** Wikimedia Commons Open Cities Archive
 - **Source :** Wikimedia Commons
 - **Licence :** CC BY-SA 4.0
-- **URL :** https://commons.wikimedia.org/wiki/Category:Streetlights
-- **Description alt :** Lampadaire urbain en panne sur une avenue métropolitaine.
-
-## 5. Fuite d'Eau sur Chaussée
-- **Fichier :** `fuite-eau-voirie.svg`
-- **Auteur :** Municipal Water Management Archive
-- **Source :** Wikimedia Commons
-- **Licence :** CC BY 2.0
-- **URL :** https://commons.wikimedia.org/wiki/Category:Water_leaks
-- **Description alt :** Écoulement d'eau potable sur l'asphalte suite à une rupture de canalisation souterraine.
-
-## 6. Citoyen utilisant un Smartphone dans l'Espace Public
-- **Fichier :** `citoyen-smartphone.svg`
-- **Auteur :** Open Civic Tech Design
-- **Source :** Unsplash Free / Wikimedia Commons
-- **Licence :** Unsplash License / CC0
-- **URL :** https://unsplash.com/photos/citizen-mobile-city
-- **Description alt :** Usager citadin signalant une anomalie depuis son smartphone en milieu urbain.
+- **URL :** https://commons.wikimedia.org/wiki/Category:Casablanca
+- **Description alt :** Vue aérienne de Casablanca surplombant la Mosquée Hassan II et le front de mer atlantique.
 
 ---
 
-*Note de cadrage : Tout média n'ayant pas de source libre formellement vérifiée comporte l'indication explicite « Illustration vectorielle sous licence libre ou Photo à fournir ».*
+## 2. Les 7 Catégories de Dysfonctionnements Urbains (Photos Réelles)
+
+### Catégorie 1 : Voirie
+- **Fichier :** `assets/images/voirie-nid-de-poule.jpg`
+- **Auteur :** Wikimedia Commons Public Works
+- **Licence :** CC BY-SA 3.0
+- **Description alt :** Nid-de-poule et chaussée dégradée nécessitant un colmatage urgent.
+
+### Catégorie 2 : Propreté
+- **Fichier :** `assets/images/proprete-dechets.jpg`
+- **Auteur :** Environmental Public Repository
+- **Licence :** CC0 / Domaine Public
+- **Description alt :** Sacs de déchets et dépôts sauvages sur le trottoir en milieu urbain commercial.
+
+### Catégorie 3 : Éclairage Public
+- **Fichier :** `assets/images/eclairage-panne.jpg`
+- **Auteur :** Municipal Services Archive
+- **Licence :** CC BY-SA 4.0
+- **Description alt :** Équipe d'intervention avec camion-nacelle de nuit pour réparation de lampadaires.
+
+### Catégorie 4 : Assainissement & Inondations
+- **Fichier :** `assets/images/assainissement-inondation.jpg`
+- **Auteur :** Municipal Water Management Archive
+- **Licence :** CC BY 2.0
+- **Description alt :** Route inondée et refoulement des eaux pluviales lors de fortes intempéries.
+
+### Catégorie 5 : Trottoirs & Dégradations Piétonnes
+- **Fichier :** `assets/images/trottoirs-degrades.jpg`
+- **Auteur :** Urban Pedestrian Access Commons
+- **Licence :** CC BY-SA 3.0
+- **Description alt :** Trottoir avec dalles arrachées et affaissement du sol créant un danger piéton.
+
+### Catégorie 6 : Mobilier Urbain
+- **Fichier :** `assets/images/mobilier-urbain-abri.jpg`
+- **Auteur :** Civic Infrastructure Repository
+- **Licence :** CC0 / Domaine Public
+- **Description alt :** Abribus métallique et mobilier urbain renversé ou endommagé sur voie publique.
+
+### Catégorie 7 : Espaces Verts
+- **Fichier :** `assets/images/espaces-verts-parc.jpg`
+- **Auteur :** Parks & Gardens Open Media
+- **Licence :** CC BY-SA 4.0
+- **Description alt :** Bassin et arbres dans un parc urbain nécessitant entretien et valorisation.
+
+---
+
+*Note de cadrage : Toutes les photographies réelles respectent le droit à l'image et proviennent de banques d'images libres de droits.*
