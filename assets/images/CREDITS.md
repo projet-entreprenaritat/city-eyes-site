@@ -15,7 +15,7 @@ Toutes les images et vidéos intégrées dans ce projet proviennent de sources o
 ---
 
 ## 1. Contexte Urbain : Vue Aérienne de Casablanca
-- **Fichier :** `assets/images/casablanca-vue-aerienne.jpg`
+- **Fichier :** `assets/images/casablanca.jpg`
 - **Auteur :** Wikimedia Commons Open Cities Archive
 - **Source :** Wikimedia Commons
 - **Licence :** CC BY-SA 4.0
@@ -27,43 +27,43 @@ Toutes les images et vidéos intégrées dans ce projet proviennent de sources o
 ## 2. Les 7 Catégories de Dysfonctionnements Urbains (Photos Réelles)
 
 ### Catégorie 1 : Voirie
-- **Fichier :** `assets/images/voirie-nid-de-poule.jpg`
+- **Fichier :** `assets/images/nid-de-poule.jpg`
 - **Auteur :** Wikimedia Commons Public Works
 - **Licence :** CC BY-SA 3.0
 - **Description alt :** Nid-de-poule et chaussée dégradée nécessitant un colmatage urgent.
 
 ### Catégorie 2 : Propreté
-- **Fichier :** `assets/images/proprete-dechets.jpg`
+- **Fichier :** `assets/images/dechets.jpg`
 - **Auteur :** Environmental Public Repository
 - **Licence :** CC0 / Domaine Public
 - **Description alt :** Sacs de déchets et dépôts sauvages sur le trottoir en milieu urbain commercial.
 
 ### Catégorie 3 : Éclairage Public
-- **Fichier :** `assets/images/eclairage-panne.jpg`
+- **Fichier :** `assets/images/eclairage.jpg`
 - **Auteur :** Municipal Services Archive
 - **Licence :** CC BY-SA 4.0
 - **Description alt :** Équipe d'intervention avec camion-nacelle de nuit pour réparation de lampadaires.
 
 ### Catégorie 4 : Assainissement & Inondations
-- **Fichier :** `assets/images/assainissement-inondation.jpg`
+- **Fichier :** `assets/images/canalisation.jpg`
 - **Auteur :** Municipal Water Management Archive
 - **Licence :** CC BY 2.0
 - **Description alt :** Route inondée et refoulement des eaux pluviales lors de fortes intempéries.
 
 ### Catégorie 5 : Trottoirs & Dégradations Piétonnes
-- **Fichier :** `assets/images/trottoirs-degrades.jpg`
+- **Fichier :** `assets/images/trottoir.jpg`
 - **Auteur :** Urban Pedestrian Access Commons
 - **Licence :** CC BY-SA 3.0
 - **Description alt :** Trottoir avec dalles arrachées et affaissement du sol créant un danger piéton.
 
 ### Catégorie 6 : Mobilier Urbain
-- **Fichier :** `assets/images/mobilier-urbain-abri.jpg`
+- **Fichier :** `assets/images/mobilier.jpg`
 - **Auteur :** Civic Infrastructure Repository
 - **Licence :** CC0 / Domaine Public
 - **Description alt :** Abribus métallique et mobilier urbain renversé ou endommagé sur voie publique.
 
 ### Catégorie 7 : Espaces Verts
-- **Fichier :** `assets/images/espaces-verts-parc.jpg`
+- **Fichier :** `assets/images/espaces-verts.jpg`
 - **Auteur :** Parks & Gardens Open Media
 - **Licence :** CC BY-SA 4.0
 - **Description alt :** Bassin et arbres dans un parc urbain nécessitant entretien et valorisation.
