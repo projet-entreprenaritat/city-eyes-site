@@ -1,0 +1,1111 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CITY EYES — Étude de marché Casablanca 2026</title>
+  <meta name="description" content="Étude de marché CITY EYES 2026 : Réseau citoyen de détection et priorisation collaborative des problèmes urbains à Casablanca, Maroc.">
+  <meta name="theme-color" content="#0b2545">
+
+  <!-- Feuilles de style modulaires -->
+  <link rel="stylesheet" href="assets/css/variables.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <!-- Scripts JavaScript vanilla autonomes -->
+  <script src="assets/js/radar.js" defer></script>
+  <script src="assets/js/app.js" defer></script>
+</head>
+<body>
+
+  <!-- Barre de progression de lecture supérieure -->
+  <div id="progress" aria-hidden="true"></div>
+
+  <!-- Navigation fixe sémantique -->
+  <header>
+    <nav class="top-nav" aria-label="Navigation principale">
+      <a href="#hero" class="brand" aria-label="CITY EYES - Retour au début">
+        <div class="brand-logo-icon" aria-hidden="true">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/>
+            <circle cx="12" cy="12" r="3"/>
+          </svg>
+        </div>
+        <span>CITY EYES</span>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#introduction">Contexte</a></li>
+        <li><a href="#presentation">Fonctionnalités</a></li>
+        <li><a href="#demande">Demande</a></li>
+        <li><a href="#concurrence">Concurrence</a></li>
+        <li><a href="#differenciation">Différenciation</a></li>
+        <li><a href="#analyses">PESTEL & SWOT</a></li>
+        <li><a href="#strategie">Stratégie 4P</a></li>
+        <li><a href="#finances">Finances</a></li>
+        <li><a href="#enquete">Enquête</a></li>
+        <li><a href="#lancement">Lancement</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" type="button" aria-label="Basculer entre mode sombre et clair" title="Changer de thème">
+          <span id="themeIcon">🌓</span>
+        </button>
+        <button class="mobile-menu-btn" id="mobileMenuBtn" type="button" aria-label="Ouvrir le menu de navigation" aria-expanded="false">
+          ☰
+        </button>
+      </div>
+    </nav>
+
+    <!-- Menu mobile déroulant -->
+    <div class="mobile-drawer" id="mobileDrawer">
+      <a href="#introduction">01. Contexte & Enjeux</a>
+      <a href="#presentation">02. Fonctionnalités</a>
+      <a href="#demande">03. Demande & Segments</a>
+      <a href="#concurrence">04. Concurrence</a>
+      <a href="#differenciation">05. Différenciation</a>
+      <a href="#analyses">06. PESTEL & SWOT</a>
+      <a href="#strategie">07. Stratégie 4P</a>
+      <a href="#finances">08. Modèle & Budget prévisionnel (27 000 DH)</a>
+      <a href="#enquete">09. Enquête de terrain</a>
+      <a href="#lancement">10. Plan de lancement</a>
+      <a href="#conclusion">11. Conclusion & Sources</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- =======================================================================
+         1. HERO SECTION
+         ======================================================================= -->
+    <section class="hero" id="hero">
+      <canvas id="radar-canvas" aria-hidden="true"></canvas>
+      <div class="hero-glow" aria-hidden="true"></div>
+
+      <div class="container">
+        <div class="hero-content reveal in">
+          <div class="badge-hero">
+            <span class="dot"></span>
+            <span>Étude de marché · Maroc – Casablanca · 2026</span>
+          </div>
+          <h1>CITY <span class="gradient-text">EYES</span></h1>
+          <p class="hero-subtitle">Réseau citoyen de détection des problèmes urbains</p>
+          <p class="hero-slogan">« Vos yeux pour une ville meilleure. »</p>
+          <div class="btns">
+            <a href="#presentation" class="btn btn-primary">Explorer le projet</a>
+            <a href="#finances" class="btn btn-ghost">Budget initial prévisionnel (27 000 DH)</a>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal in">
+          <!-- Logo SVG animé officiel CITY EYES -->
+          <svg class="eye-device" viewBox="0 0 420 320" role="img" aria-label="Logo CITY EYES avec faisceau scanner vertical, pupille radar pulsante et repère GPS">
+            <defs>
+              <linearGradient id="eyeStrokeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#2f80ed"/>
+                <stop offset="50%" stop-color="#8ecdf7"/>
+                <stop offset="100%" stop-color="#0b2545"/>
+              </linearGradient>
+              <linearGradient id="pinGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%" stop-color="#f2a33a"/>
+                <stop offset="100%" stop-color="#d97706"/>
+              </linearGradient>
+              <clipPath id="eyeMask">
+                <path d="M 30,160 C 90,60 210,30 210,30 C 210,30 330,60 390,160 C 330,260 210,290 210,290 C 210,290 90,260 30,160 Z"/>
+              </clipPath>
+            </defs>
+
+            <!-- Contour de l'œil scanner -->
+            <path d="M 30,160 C 90,60 210,30 210,30 C 210,30 330,60 390,160 C 330,260 210,290 210,290 C 210,290 90,260 30,160 Z"
+                  fill="none" stroke="url(#eyeStrokeGrad)" stroke-width="14" stroke-linejoin="round"/>
+
+            <!-- Effet radar dans la pupille -->
+            <g clip-path="url(#eyeMask)">
+              <circle cx="210" cy="160" r="110" fill="none" stroke="rgba(47, 128, 237, 0.2)" stroke-width="1.5"/>
+              <circle cx="210" cy="160" r="75" fill="none" stroke="rgba(47, 128, 237, 0.3)" stroke-width="1.5"/>
+              <circle class="radar-pulse-ring" cx="210" cy="160" r="40" fill="none" stroke="#f2a33a"/>
+              <!-- Faisceau de balayage lumineux vertical -->
+              <rect class="scan-line" x="20" y="157" width="380" height="6" fill="rgba(142, 205, 247, 0.85)" filter="drop-shadow(0 0 10px #8ecdf7)"/>
+            </g>
+
+            <!-- Repère GPS urbain central -->
+            <g transform="translate(0, -10)">
+              <path d="M 210,95 C 185,95 165,115 165,140 C 165,175 210,225 210,225 C 210,225 255,175 255,140 C 255,115 235,95 210,95 Z"
+                    fill="url(#pinGrad)" filter="drop-shadow(0 6px 14px rgba(242, 163, 58, 0.45))"/>
+              <circle cx="210" cy="138" r="15" fill="#ffffff"/>
+              <circle cx="210" cy="138" r="7" fill="#0b2545"/>
+              <circle class="ping-dot" cx="210" cy="138" r="12" fill="none" stroke="#ffffff" stroke-width="2"/>
+            </g>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         2. INTRODUCTION : ENJEUX URBAINS & COMPTEURS DE SYNTHÈSE
+         ======================================================================= -->
+    <section id="introduction">
+      <div class="container">
+        <span class="eyebrow">01 · Contexte & Enjeux</span>
+        <h2>Une métropole en pleine mutation</h2>
+        <p class="lead">Le développement rapide des villes comme Casablanca entraîne une hausse constante des besoins en propreté, sécurité, entretien des infrastructures et réactivité des services publics.</p>
+
+        <div class="grid g2" style="margin-top: 40px; align-items: center;">
+          <div class="card reveal">
+            <h3 style="color: var(--blue);">Le défi urbain au quotidien</h3>
+            <p>Nids-de-poule, déchets abandonnés, éclairage public défaillant, fuites d'eau ou trottoirs dégradés : le signalement de ces problèmes et leur transmission rapide aux services concernés ne sont pas toujours simples. Les citoyens manquent souvent d'un canal rapide, et les services techniques d'une vision centralisée.</p>
+            <p style="margin-top: 14px; font-weight: 600; color: var(--navy);">CITY EYES propose une plateforme participative : chaque citoyen peut signaler une anomalie avec une photo, sa localisation GPS et un système de suivi transparent.</p>
+          </div>
+
+          <div>
+            <img src="assets/images/casablanca-front-de-mer.svg" alt="Vue d'ensemble de Casablanca et de la Mosquée Hassan II au crépuscule sur l'Océan Atlantique" width="600" height="375" loading="lazy" style="border-radius: var(--radius-lg); border: 1px solid var(--border); box-shadow: var(--shadow-md);">
+          </div>
+        </div>
+
+        <!-- Compteurs de synthèse animés -->
+        <div class="grid g4 stagger-group" style="margin-top: 36px;">
+          <div class="stat-box">
+            <div class="stat-number" data-target="7">0</div>
+            <div class="stat-label">Catégories de problèmes</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-number" data-target="4">0</div>
+            <div class="stat-label">Gestes clés simples</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-number" data-target="27000" data-suffix=" DH">0 DH</div>
+            <div class="stat-label">Budget initial prévisionnel</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-number" data-target="6">0</div>
+            <div class="stat-label">Phases de lancement</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         3. PRÉSENTATION : 4 GESTES & 7 CATÉGORIES
+         ======================================================================= -->
+    <section id="presentation" class="section-alt">
+      <div class="container">
+        <span class="eyebrow">02 · Présentation du projet</span>
+        <h2>Le fonctionnement en 4 gestes</h2>
+        <p class="lead">Une application mobile simple pour signaler, localiser et suivre les problèmes urbains.</p>
+
+        <!-- Les 4 gestes -->
+        <div class="grid g4 stagger-group" style="margin-top: 40px;">
+          <div class="card">
+            <div class="diff-icon" aria-hidden="true">📷</div>
+            <h3>1. Photographier</h3>
+            <p>Capturer le problème en quelques secondes avec l'appareil photo du smartphone.</p>
+          </div>
+          <div class="card">
+            <div class="diff-icon" aria-hidden="true">📍</div>
+            <h3>2. Localiser</h3>
+            <p>Position GPS précise, automatique et sans saisie manuelle de texte.</p>
+          </div>
+          <div class="card">
+            <div class="diff-icon" aria-hidden="true">🗂️</div>
+            <h3>3. Catégoriser</h3>
+            <p>Choisir simplement parmi les 7 catégories de voirie prédéfinies.</p>
+          </div>
+          <div class="card">
+            <div class="diff-icon" aria-hidden="true">🔎</div>
+            <h3>4. Suivre</h3>
+            <p>Voir l'évolution du signalement en temps réel jusqu'à sa résolution.</p>
+          </div>
+        </div>
+
+        <!-- Les 7 catégories de problèmes de l'étude -->
+        <h3 style="margin-top: 60px; font-size: 1.4rem;">7 catégories de problèmes détectés</h3>
+        <p class="lead" style="margin-bottom: 24px;">Les typologies de signalements urbains identifiées dans l'étude :</p>
+
+        <div class="grid g4 stagger-group">
+          <div class="card">
+            <img src="assets/images/voirie-nids-de-poule.svg" alt="Illustration voirie : nid-de-poule" width="280" height="180" loading="lazy" style="border-radius: var(--radius-sm); margin-bottom: 12px;">
+            <span class="tag">Voirie</span>
+            <p style="margin-top: 8px; font-weight: 600;">Nids-de-poule, routes dégradées</p>
+          </div>
+
+          <div class="card">
+            <img src="assets/images/proprete-dechets-urbains.svg" alt="Illustration propreté : déchets urbains" width="280" height="180" loading="lazy" style="border-radius: var(--radius-sm); margin-bottom: 12px;">
+            <span class="tag">Propreté</span>
+            <p style="margin-top: 8px; font-weight: 600;">Déchets abandonnés, dépôts sauvages</p>
+          </div>
+
+          <div class="card">
+            <img src="assets/images/eclairage-public-panne.svg" alt="Illustration éclairage : lampadaire éteint" width="280" height="180" loading="lazy" style="border-radius: var(--radius-sm); margin-bottom: 12px;">
+            <span class="tag">Éclairage</span>
+            <p style="margin-top: 8px; font-weight: 600;">Lampadaires défectueux</p>
+          </div>
+
+          <div class="card">
+            <img src="assets/images/fuite-eau-voirie.svg" alt="Illustration eau : fuite sur chaussée" width="280" height="180" loading="lazy" style="border-radius: var(--radius-sm); margin-bottom: 12px;">
+            <span class="tag">Eau</span>
+            <p style="margin-top: 8px; font-weight: 600;">Fuites d'eau sur le réseau</p>
+          </div>
+
+          <div class="card">
+            <span class="tag">Assainissement</span>
+            <p style="margin-top: 10px; font-weight: 600;">Canalisations bouchées, inondations de chaussée</p>
+          </div>
+
+          <div class="card">
+            <span class="tag">Mobilier urbain</span>
+            <p style="margin-top: 10px; font-weight: 600;">Bancs cassés, panneaux endommagés</p>
+          </div>
+
+          <div class="card" style="grid-column: span 2;">
+            <span class="tag">Espaces verts & Trottoirs</span>
+            <p style="margin-top: 10px; font-weight: 600;">Arbres dangereux, espaces dégradés, trottoirs impraticables</p>
+          </div>
+        </div>
+
+        <!-- Proposition de valeur officielle de l'étude -->
+        <div class="card reveal" style="margin-top: 40px; text-align: center; border-left: 6px solid var(--blue);">
+          <p style="font-size: 1.15rem; font-weight: 700; color: var(--navy); margin-bottom: 8px;">Proposition de valeur :</p>
+          <p style="color: var(--text-muted); font-size: 1.05rem;">
+            Simplicité du signalement · Précision de la géolocalisation · Transparence du suivi · Participation citoyenne.
+          </p>
+          <p style="margin-top: 10px; font-style: italic; color: var(--blue); font-weight: 600;">
+            « Transformer chaque citoyen en observateur actif pour construire une ville plus propre, plus sûre et mieux entretenue. »
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         4. DEMANDE : SEGMENTS USAGERS ET PAYEURS
+         ======================================================================= -->
+    <section id="demande">
+      <div class="container">
+        <span class="eyebrow">03 · Analyse de la demande</span>
+        <h2>Qui utilise, qui paie</h2>
+        <p class="lead">Les citoyens sont les utilisateurs principaux. Les collectivités et entreprises pourraient être les clients payeurs, sous réserve de validation commerciale.</p>
+
+        <div class="grid g2" style="margin-top: 40px;">
+          <!-- Segments Utilisateurs -->
+          <div class="card reveal">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px;">
+              <h3>Segments Utilisateurs</h3>
+              <span class="tag">Gratuit</span>
+            </div>
+            <ul class="check-list">
+              <li>
+                <div class="check-icon">✓</div>
+                <div><strong>Citoyens :</strong> habitants, étudiants, visiteurs soucieux de leur cadre de vie.</div>
+              </li>
+              <li>
+                <div class="check-icon">✓</div>
+                <div><strong>Commerçants et automobilistes :</strong> usagers subissant les problèmes affectant l'activité ou les déplacements quotidiens.</div>
+              </li>
+              <li>
+                <div class="check-icon">✓</div>
+                <div><strong>Associations de quartier :</strong> collectifs locaux engagés dans l'amélioration du cadre urbain.</div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Segments Payeurs -->
+          <div class="card reveal">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px;">
+              <h3>Segments Payeurs Potentiels</h3>
+              <span class="badge-warn">Sous réserve de validation</span>
+            </div>
+            <ul class="check-list">
+              <li>
+                <div class="check-icon">✓</div>
+                <div><strong>Communes et arrondissements :</strong> identifier, centraliser et prioriser les interventions municipales.</div>
+              </li>
+              <li>
+                <div class="check-icon">✓</div>
+                <div><strong>Entreprises de maintenance et de propreté :</strong> organiser et optimiser le suivi technique des équipes sur le terrain.</div>
+              </li>
+              <li>
+                <div class="check-icon">✓</div>
+                <div><strong>Gestionnaires immobiliers et promoteurs :</strong> superviser et préserver leurs espaces et abords.</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Tableau des Besoins et Réponses -->
+        <h3 style="margin-top: 50px; font-size: 1.3rem;">Besoins identifiés et réponses CITY EYES</h3>
+        <div class="table-container reveal" style="margin-top: 18px;">
+          <table>
+            <thead>
+              <tr>
+                <th>Besoin potentiel</th>
+                <th>Réponse CITY EYES</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Difficulté à signaler</td>
+                <td>Application mobile simple avec prise de photo</td>
+              </tr>
+              <tr>
+                <td>Localisation imprécise</td>
+                <td>Géolocalisation GPS automatique sans saisie textuelle</td>
+              </tr>
+              <tr>
+                <td>Absence de suivi visible</td>
+                <td>Tableau de suivi des signalements en direct</td>
+              </tr>
+              <tr>
+                <td>Problèmes dispersés</td>
+                <td>Centralisation et cartographie</td>
+              </tr>
+              <tr>
+                <td>Priorisation difficile</td>
+                <td>Classement par catégorie et niveau de priorité</td>
+              </tr>
+              <tr>
+                <td>Participation limitée</td>
+                <td>Réseau collaboratif citoyen</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p class="lead" style="font-size: 0.92rem; margin-top: 24px;">
+          <strong>Contexte numérique (source DataReportal, Digital 2026 Morocco) :</strong> Environ 35,5 millions d'internautes au Maroc fin 2025 (taux de pénétration de 92,2 %). Ce chiffre décrit l'environnement numérique porteur, mais ne prouve pas à lui seul une demande spontanée pour CITY EYES.
+        </p>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         5. CONCURRENCE : BENCHMARK COMPARATIF
+         ======================================================================= -->
+    <section id="concurrence" class="section-alt">
+      <div class="container">
+        <span class="eyebrow">04 · Offre et concurrence</span>
+        <h2>Des dispositifs existent déjà</h2>
+        <p class="lead">Chikaya (portail national) et CiRM Casablanca (dispositif local) sont les références institutionnelles. Les réseaux sociaux servent à publier, mais pas à gérer structurellement les interventions.</p>
+
+        <div style="margin-top: 16px;">
+          <span class="badge-warn">Comparaison indicative : les fonctionnalités exactes des concurrents doivent être vérifiées par des tests pratiques</span>
+        </div>
+
+        <div class="table-container reveal" style="margin-top: 24px;">
+          <table>
+            <thead>
+              <tr>
+                <th>Critère</th>
+                <th>Chikaya</th>
+                <th>CiRM Casablanca</th>
+                <th>Réseaux sociaux</th>
+                <th class="col-highlight">CITY EYES (prévu)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Signalement citoyen</td>
+                <td><span class="status-yes">Oui</span></td>
+                <td><span class="status-yes">Oui</span></td>
+                <td><span class="status-yes">Oui</span></td>
+                <td class="col-highlight"><span class="status-yes">Oui</span></td>
+              </tr>
+              <tr>
+                <td>Photo</td>
+                <td><span class="status-check">À vérifier</span></td>
+                <td><span class="status-check">À vérifier</span></td>
+                <td><span class="status-yes">Oui</span></td>
+                <td class="col-highlight"><span class="status-yes">Oui</span></td>
+              </tr>
+              <tr>
+                <td>Géolocalisation</td>
+                <td><span class="status-check">À vérifier</span></td>
+                <td><span class="status-check">À vérifier</span></td>
+                <td><span class="status-neutral">Variable</span></td>
+                <td class="col-highlight"><span class="status-yes">Oui</span></td>
+              </tr>
+              <tr>
+                <td>Suivi</td>
+                <td><span class="status-yes">Oui</span></td>
+                <td><span class="status-yes">Oui</span></td>
+                <td><span class="status-neutral">Non structuré</span></td>
+                <td class="col-highlight"><span class="status-yes">Oui</span></td>
+              </tr>
+              <tr>
+                <td>Cartographie</td>
+                <td><span class="status-check">À vérifier</span></td>
+                <td><span class="status-check">À vérifier</span></td>
+                <td><span class="status-neutral">Non structurée</span></td>
+                <td class="col-highlight"><span class="status-yes">Oui</span></td>
+              </tr>
+              <tr>
+                <td>Classement par catégorie</td>
+                <td><span class="status-neutral">Selon dispositif</span></td>
+                <td><span class="status-neutral">Selon dispositif</span></td>
+                <td><span class="status-neutral">Non</span></td>
+                <td class="col-highlight"><span class="status-yes">Oui</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         6. DIFFÉRENCIATION & SIMULATIONS D'ÉCRANS
+         ======================================================================= -->
+    <section id="differenciation">
+      <div class="container">
+        <span class="eyebrow">05 · Différenciation</span>
+        <h2>Différenciation envisagée</h2>
+        <p class="lead">CITY EYES ne doit pas être « une application de plus ». Son positionnement : contribuer à organiser et prioriser la résolution des problèmes, pas seulement à les signaler.</p>
+
+        <!-- 6 facteurs de différenciation -->
+        <div class="diff-grid stagger-group" style="margin-top: 40px;">
+          <div class="diff-card">
+            <div class="diff-icon" aria-hidden="true">🗺️</div>
+            <h3>Cartographie interactive</h3>
+            <p>Vue d'ensemble géolocalisée pour situer les incidents en temps réel.</p>
+            <span class="badge-concept" style="margin-top: 10px;">Concept envisagé, à valider</span>
+          </div>
+
+          <div class="diff-card">
+            <div class="diff-icon" aria-hidden="true">👥</div>
+            <h3>Détection collaborative</h3>
+            <p>Possibilité pour plusieurs citoyens de confirmer un problème signalé.</p>
+            <span class="badge-concept" style="margin-top: 10px;">Concept envisagé, à valider</span>
+          </div>
+
+          <div class="diff-card">
+            <div class="diff-icon" aria-hidden="true">🧩</div>
+            <h3>Regroupement des doublons</h3>
+            <p>Fusion automatique des alertes multiples pour éviter l'encombrement des services.</p>
+            <span class="badge-concept" style="margin-top: 10px;">Concept envisagé, à valider</span>
+          </div>
+
+          <div class="diff-card">
+            <div class="diff-icon" aria-hidden="true">🏁</div>
+            <h3>Priorisation des interventions</h3>
+            <p>Orientation des équipes d'intervention selon le niveau d'urgence constaté.</p>
+            <span class="badge-concept" style="margin-top: 10px;">Concept envisagé, à valider</span>
+          </div>
+
+          <div class="diff-card">
+            <div class="diff-icon" aria-hidden="true">📊</div>
+            <h3>Statistiques récurrentes</h3>
+            <p>Analyse des zones récurrentes pour des rénovations structurelles.</p>
+            <span class="badge-concept" style="margin-top: 10px;">Concept envisagé, à valider</span>
+          </div>
+
+          <div class="diff-card">
+            <div class="diff-icon" aria-hidden="true">🏛️</div>
+            <h3>Tableau de bord partenaires</h3>
+            <p>Outil de gestion dédié pour les collectivités et entreprises de maintenance.</p>
+            <span class="badge-concept" style="margin-top: 10px;">Concept envisagé, à valider</span>
+          </div>
+        </div>
+
+        <!-- Démonstration SVG : Carte schématique de Casablanca -->
+        <div class="map-preview-card reveal" style="margin-top: 45px;">
+          <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; margin-bottom: 14px;">
+            <div>
+              <h3>Démonstration cartographique schématique — Casablanca</h3>
+              <p style="font-size: 0.9rem; color: var(--text-muted);">Aperçu conceptuel de répartition des anomalies urbaines.</p>
+            </div>
+            <span class="badge-warn">Illustration schématique, non cartographique</span>
+          </div>
+
+          <div class="map-wrapper">
+            <svg class="map-svg" viewBox="0 0 900 400" aria-label="Illustration schématique non cartographique des signalements à Casablanca">
+              <rect width="900" height="400" fill="#071322"/>
+
+              <!-- Côte Atlantique Casablanca (schématique) -->
+              <path d="M 0,0 L 900,0 L 900,100 C 720,110 580,140 450,120 C 320,100 180,160 0,130 Z" fill="#0d2545"/>
+              <text x="30" y="50" fill="#8ecdf7" font-size="13" font-weight="700" letter-spacing="2">OCÉAN ATLANTIQUE</text>
+              <text x="50" y="150" fill="#94a9c4" font-size="12">Corniche d'Ain Diab</text>
+              <text x="440" y="105" fill="#f2a33a" font-size="12" font-weight="bold">Mosquée Hassan II</text>
+              <text x="550" y="190" fill="#94a9c4" font-size="12">Centre-ville / Bd Mohammed V</text>
+              <text x="320" y="240" fill="#94a9c4" font-size="12">Maârif / Bd Zerktouni</text>
+              <text x="240" y="340" fill="#94a9c4" font-size="12">Sidi Maârouf / Casanearshore</text>
+
+              <!-- Axes routiers schématiques -->
+              <g stroke="rgba(142, 205, 247, 0.15)" stroke-width="3" fill="none">
+                <path d="M 0,140 Q 300,120 500,160 T 900,190"/>
+                <path d="M 450,120 L 480,400"/>
+                <path d="M 200,400 L 400,140"/>
+                <path d="M 500,160 L 800,380"/>
+              </g>
+
+              <!-- Pins d'anomalies schématiques -->
+              <g class="map-pin" transform="translate(360, 220)">
+                <circle cx="0" cy="0" r="14" fill="rgba(242, 163, 58, 0.3)"/>
+                <circle cx="0" cy="0" r="7" fill="#f2a33a"/>
+                <title>Nid-de-poule (Bd Zerktouni)</title>
+              </g>
+
+              <g class="map-pin" transform="translate(180, 160)">
+                <circle cx="0" cy="0" r="14" fill="rgba(47, 128, 237, 0.3)"/>
+                <circle cx="0" cy="0" r="7" fill="#2f80ed"/>
+                <title>Éclairage défectueux (Ain Diab)</title>
+              </g>
+
+              <g class="map-pin" transform="translate(560, 170)">
+                <circle cx="0" cy="0" r="14" fill="rgba(16, 185, 129, 0.3)"/>
+                <circle cx="0" cy="0" r="7" fill="#10b981"/>
+                <title>Déchets signalés (Centre-ville)</title>
+              </g>
+            </svg>
+          </div>
+        </div>
+
+        <!-- Galerie des simulations d'écrans de l'application -->
+        <h3 style="margin-top: 50px; font-size: 1.3rem;">Simulations des interfaces CITY EYES</h3>
+        <p class="lead">Maquettes de simulation conceptuelle illustrant le parcours utilisateur :</p>
+
+        <div class="simulations-grid reveal">
+          <div class="sim-card">
+            <img src="assets/simulations/simulation-signalement.svg" alt="Simulation : écran mobile de signalement d'un nid-de-poule avec photo et position GPS" width="300" height="480" loading="lazy">
+            <h4>Écran de signalement</h4>
+            <span class="sim-badge">Simulation conceptuelle</span>
+          </div>
+
+          <div class="sim-card">
+            <img src="assets/simulations/simulation-suivi.svg" alt="Simulation : écran mobile de suivi de ticket en temps réel" width="300" height="480" loading="lazy">
+            <h4>Écran de suivi</h4>
+            <span class="sim-badge">Simulation conceptuelle</span>
+          </div>
+
+          <div class="sim-card">
+            <img src="assets/simulations/simulation-carte.svg" alt="Simulation : carte conceptuelle des signalements urbains" width="450" height="280" loading="lazy">
+            <h4>Carte des signalements</h4>
+            <span class="sim-badge">Simulation conceptuelle</span>
+          </div>
+
+          <div class="sim-card">
+            <img src="assets/simulations/simulation-dashboard.svg" alt="Simulation : console de gestion pour partenaires et services municipaux" width="450" height="280" loading="lazy">
+            <h4>Console de supervision</h4>
+            <span class="sim-badge">Simulation conceptuelle</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         7. PESTEL & SWOT (MATRICE 2X2 COLORÉE)
+         ======================================================================= -->
+    <section id="analyses" class="section-alt">
+      <div class="container">
+        <span class="eyebrow">06 · Diagnostic stratégique</span>
+        <h2>PESTEL et Matrice SWOT</h2>
+        <p class="lead">Analyse de l'environnement macroéconomique et matrice diagnostique interne / externe.</p>
+
+        <!-- 6 cartes PESTEL -->
+        <h3 style="margin-top: 36px; margin-bottom: 20px;">PESTEL (6 dimensions)</h3>
+        <div class="pestel-grid stagger-group">
+          <div class="pestel-item">
+            <div class="pestel-letter">P</div>
+            <h4>Politique</h4>
+            <p>Modernisation urbaine et digitalisation des services publics peuvent favoriser le projet.</p>
+          </div>
+          <div class="pestel-item">
+            <div class="pestel-letter">E</div>
+            <h4>Économique</h4>
+            <p>Collectivités et prestataires cherchent à optimiser leurs budgets d'entretien.</p>
+          </div>
+          <div class="pestel-item">
+            <div class="pestel-letter">S</div>
+            <h4>Socioculturel</h4>
+            <p>Envie des citoyens de participer davantage à l'amélioration de leur quartier.</p>
+          </div>
+          <div class="pestel-item">
+            <div class="pestel-letter">T</div>
+            <h4>Technologique</h4>
+            <p>GPS, smartphones, cartes interactives et services cloud facilitent le développement.</p>
+          </div>
+          <div class="pestel-item">
+            <div class="pestel-letter">E</div>
+            <h4>Environnemental</h4>
+            <p>Gestion des déchets, propreté et préservation des espaces publics.</p>
+          </div>
+          <div class="pestel-item">
+            <div class="pestel-letter">L</div>
+            <h4>Légal</h4>
+            <p>Données personnelles et géolocalisation : conformité à la <strong>loi 09-08</strong> et à la <strong>CNDP</strong> à étudier.</p>
+          </div>
+        </div>
+
+        <!-- Matrice SWOT 2x2 colorée -->
+        <h3 style="margin-top: 60px; margin-bottom: 20px;">Matrice SWOT (Synthèse)</h3>
+        <div class="swot-matrix reveal">
+          <!-- Forces (Vert émeraude) -->
+          <div class="swot-card swot-s">
+            <h3><span>Forces</span> <span>💪</span></h3>
+            <p>Concept participatif, simplicité, géolocalisation, centralisation, potentiel d'analyse des données.</p>
+          </div>
+
+          <!-- Faiblesses (Ambre) -->
+          <div class="swot-card swot-w">
+            <h3><span>Faiblesses</span> <span>⚠️</span></h3>
+            <p>Investissement initial, dépendance à Internet, confiance à construire, coopération nécessaire, risque de faux signalements.</p>
+          </div>
+
+          <!-- Opportunités (Bleu électrique) -->
+          <div class="swot-card swot-o">
+            <h3><span>Opportunités</span> <span>🚀</span></h3>
+            <p>Villes intelligentes, digitalisation des services, partenariats avec les communes, IA à terme.</p>
+          </div>
+
+          <!-- Menaces (Rouge corail) -->
+          <div class="swot-card swot-t">
+            <h3><span>Menaces</span> <span>🛡️</span></h3>
+            <p>Plateformes existantes, faible adoption, absence de réponse des organismes, confidentialité, financement.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         8. STRATÉGIE MARKETING 4P, SEGMENTATION ET SLOGAN
+         ======================================================================= -->
+    <section id="strategie">
+      <div class="container">
+        <span class="eyebrow">07 · Stratégie commerciale</span>
+        <h2>Marketing mix 4P</h2>
+        <p class="lead">Gratuit pour les citoyens, payant pour les organisations : une stratégie pensée pour l'adoption.</p>
+
+        <!-- Les 4P -->
+        <div class="grid g4 stagger-group" style="margin-top: 40px;">
+          <div class="card">
+            <div style="font-size: 2rem; margin-bottom: 8px;">📱</div>
+            <h3>Produit</h3>
+            <p>Application mobile de signalement et plateforme de gestion.</p>
+          </div>
+          <div class="card">
+            <div style="font-size: 2rem; margin-bottom: 8px;">💶</div>
+            <h3>Prix</h3>
+            <p>Gratuité citoyens ; abonnements et licences pour les organisations.</p>
+          </div>
+          <div class="card">
+            <div style="font-size: 2rem; margin-bottom: 8px;">🏪</div>
+            <h3>Distribution</h3>
+            <p>Google Play, App Store et plateforme web.</p>
+          </div>
+          <div class="card">
+            <div style="font-size: 2rem; margin-bottom: 8px;">📣</div>
+            <h3>Promotion</h3>
+            <p>Réseaux sociaux, campagnes universitaires, associations, communes.</p>
+          </div>
+        </div>
+
+        <!-- Segmentation -->
+        <div class="card reveal" style="margin-top: 36px;">
+          <h3 style="margin-bottom: 20px;">Segmentation</h3>
+          <div class="grid g3">
+            <div>
+              <h4 style="color: var(--blue);">Grand public</h4>
+              <p style="color: var(--text-muted); font-size: 0.95rem;">Habitants, étudiants, automobilistes : développer l'usage.</p>
+            </div>
+            <div>
+              <h4 style="color: var(--blue);">Institutionnel</h4>
+              <p style="color: var(--text-muted); font-size: 0.95rem;">Communes, arrondissements : vendre gestion et suivi.</p>
+            </div>
+            <div>
+              <h4 style="color: var(--blue);">Professionnel</h4>
+              <p style="color: var(--text-muted); font-size: 0.95rem;">Entreprises de maintenance et de propreté, gestionnaires immobiliers : outils de suivi.</p>
+            </div>
+          </div>
+
+          <div style="text-align: center; margin-top: 35px; padding-top: 25px; border-top: 1px solid var(--border);">
+            <p style="font-size: 1.35rem; font-weight: 800; color: var(--navy); font-style: italic;">
+              « Vos yeux pour une ville meilleure. »
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         9. MODÈLE ÉCONOMIQUE & BUDGET INITIAL PRÉVISIONNEL (27 000 DH)
+         ======================================================================= -->
+    <section id="finances" class="section-alt">
+      <div class="container">
+        <span class="eyebrow">08 · Modèle économique</span>
+        <h2>Sources de revenus & Budget</h2>
+        <p class="lead">Le modèle économique prévoit une gratuité totale pour le citoyen afin de lever les freins à l'adoption, financé par des abonnements et licences pour les gestionnaires.</p>
+
+        <div class="grid g2" style="margin-top: 40px; align-items: start;">
+          <!-- Sources de revenus de l'étude -->
+          <div class="card reveal">
+            <h3>Sources de revenus</h3>
+            <ul class="check-list" style="margin-top: 18px;">
+              <li>
+                <div class="check-icon">✓</div>
+                <div><strong>Abonnements institutionnels :</strong> accès annuel au tableau de bord pour communes et arrondissements.</div>
+              </li>
+              <li>
+                <div class="check-icon">✓</div>
+                <div><strong>Licences professionnelles :</strong> outils de gestion pour les entreprises de maintenance et de propreté.</div>
+              </li>
+              <li>
+                <div class="check-icon">✓</div>
+                <div><strong>Prestations d'analyse :</strong> rapports statistiques et cartographies des zones prioritaires.</div>
+              </li>
+              <li>
+                <div class="check-icon">✓</div>
+                <div><strong>Partenariats :</strong> financement public ou privé.</div>
+              </li>
+              <li>
+                <div class="check-icon">✓</div>
+                <div><strong>Services complémentaires :</strong> cartographie avancée et options sur mesure.</div>
+              </li>
+            </ul>
+            <p class="lead" style="margin-top: 18px; font-size: 0.92rem;">
+              Principe retenu : ne pas faire payer les citoyens pour signaler, afin de limiter les freins à l'adoption.
+            </p>
+          </div>
+
+          <!-- Budget initial estimatif / prévisionnel -->
+          <div class="card reveal">
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+              <h3>Budget prototype (estimatif)</h3>
+              <span class="badge-warn">Hypothèses de travail</span>
+            </div>
+            <p style="font-size: 0.9rem; color: var(--text-muted); margin-top: 4px;">
+              Budget initial estimatif / prévisionnel : hypothèses de cadrage, non des devis.
+            </p>
+
+            <div class="table-container" style="margin-top: 18px; box-shadow: none;">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Poste</th>
+                    <th style="text-align: right;">Montant (DH)</th>
+                    <th style="text-align: right;">Part (%)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Développement du prototype</td>
+                    <td style="text-align: right; font-weight: 700;">15 000 DH</td>
+                    <td style="text-align: right; color: var(--text-muted);">55,6 %</td>
+                  </tr>
+                  <tr>
+                    <td>Hébergement et infrastructure</td>
+                    <td style="text-align: right; font-weight: 700;">2 000 DH</td>
+                    <td style="text-align: right; color: var(--text-muted);">7,4 %</td>
+                  </tr>
+                  <tr>
+                    <td>Conception graphique</td>
+                    <td style="text-align: right; font-weight: 700;">2 000 DH</td>
+                    <td style="text-align: right; color: var(--text-muted);">7,4 %</td>
+                  </tr>
+                  <tr>
+                    <td>Communication et lancement</td>
+                    <td style="text-align: right; font-weight: 700;">3 000 DH</td>
+                    <td style="text-align: right; color: var(--text-muted);">11,1 %</td>
+                  </tr>
+                  <tr>
+                    <td>Tests et amélioration</td>
+                    <td style="text-align: right; font-weight: 700;">2 000 DH</td>
+                    <td style="text-align: right; color: var(--text-muted);">7,4 %</td>
+                  </tr>
+                  <tr>
+                    <td>Divers et imprévus</td>
+                    <td style="text-align: right; font-weight: 700;">3 000 DH</td>
+                    <td style="text-align: right; color: var(--text-muted);">11,1 %</td>
+                  </tr>
+                </tbody>
+                <tfoot>
+                  <tr style="background: rgba(47, 128, 237, 0.1); font-weight: 800;">
+                    <td>TOTAL ESTIMATIF</td>
+                    <td style="text-align: right; color: var(--blue); font-size: 1.15rem;">
+                      <span class="stat-number" style="font-size: 1.25rem; display: inline;" data-target="27000" data-suffix=" DH">0 DH</span>
+                    </td>
+                    <td style="text-align: right; color: var(--blue);">100 %</td>
+                  </tr>
+                </tfoot>
+              </table>
+            </div>
+
+            <!-- Barre de répartition animée -->
+            <div class="budget-gauge" aria-hidden="true">
+              <div class="budget-segment" style="width: 0%; background: #2f80ed;" data-width="55.6%" title="Développement"></div>
+              <div class="budget-segment" style="width: 0%; background: #8ecdf7;" data-width="7.4%" title="Hébergement"></div>
+              <div class="budget-segment" style="width: 0%; background: #f2a33a;" data-width="7.4%" title="Design"></div>
+              <div class="budget-segment" style="width: 0%; background: #10b981;" data-width="11.1%" title="Communication"></div>
+              <div class="budget-segment" style="width: 0%; background: #6366f1;" data-width="7.4%" title="Tests"></div>
+              <div class="budget-segment" style="width: 0%; background: #94a9c4;" data-width="11.1%" title="Imprévus"></div>
+            </div>
+            <p style="font-size: 0.85rem; color: var(--text-muted);">
+              Le développement représente environ 56 % du budget initial prévisionnel (15 000 / 27 000 DH).
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         10. ENQUÊTE DE TERRAIN : 10 QUESTIONS & DONUT
+         ======================================================================= -->
+    <section id="enquete">
+      <div class="container">
+        <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 10px;">
+          <div>
+            <span class="eyebrow">09 · Enquête de terrain</span>
+            <h2>Valider le marché</h2>
+          </div>
+          <span class="badge-warn" style="font-size: 0.85rem; padding: 6px 16px;">Données à valider</span>
+        </div>
+        <p class="lead">
+          Il est recommandé d'interroger au moins 100 personnes à Casablanca (habitants, étudiants, commerçants, automobilistes). Les pourcentages ci-dessous proviennent de l'infographie de synthèse et doivent être confirmés par une collecte primaire formelle, avec taille d'échantillon, période et lieux précisés.
+        </p>
+
+        <div class="grid g2" style="margin-top: 40px; align-items: center;">
+          <!-- Graphique donut 75 / 15 / 10 % -->
+          <div class="card reveal" style="text-align: center;">
+            <h3>Intérêt pour CITY EYES</h3>
+            <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 20px;">Données d'infographie</p>
+
+            <div class="donut-container">
+              <svg class="donut-svg" viewBox="0 0 100 100" role="img" aria-label="Graphique circulaire : 75% Très intéressé, 15% Intéressé, 10% Peu intéressé">
+                <circle cx="50" cy="50" r="40" fill="transparent" stroke="var(--border)" stroke-width="16"/>
+                <circle cx="50" cy="50" r="40" fill="transparent" stroke="#2f80ed" stroke-width="16"
+                        stroke-dasharray="188.5 251.3" stroke-dashoffset="0"/>
+                <circle cx="50" cy="50" r="40" fill="transparent" stroke="#f2a33a" stroke-width="16"
+                        stroke-dasharray="37.7 251.3" stroke-dashoffset="-188.5"/>
+                <circle cx="50" cy="50" r="40" fill="transparent" stroke="#94a9c4" stroke-width="16"
+                        stroke-dasharray="25.1 251.3" stroke-dashoffset="-226.2"/>
+              </svg>
+              <div class="donut-hole">
+                <div class="donut-center-num">75%</div>
+                <div class="donut-center-lbl">Très intéressé</div>
+              </div>
+            </div>
+
+            <div style="display: flex; justify-content: center; gap: 18px; margin-top: 24px; font-size: 0.9rem; flex-wrap: wrap;">
+              <span><strong style="color: #2f80ed;">■</strong> 75 % Très intéressé</span>
+              <span><strong style="color: #f2a33a;">■</strong> 15 % Intéressé</span>
+              <span><strong style="color: #94a9c4;">■</strong> 10 % Peu intéressé</span>
+            </div>
+          </div>
+
+          <!-- Questionnaire complet en 10 questions de l'étude -->
+          <div class="card reveal">
+            <h3>Questionnaire d'enquête de terrain (10 questions)</h3>
+            <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 14px;">Recommandation : administration auprès d'au moins 100 répondants à Casablanca :</p>
+            
+            <ol class="check-list" style="max-height: 420px; overflow-y: auto; padding-right: 8px;">
+              <li>
+                <div class="check-icon">1</div>
+                <div><strong>Fréquence des anomalies :</strong> À quelle fréquence constatez-vous des problèmes urbains dans votre quartier de résidence ou de travail ?</div>
+              </li>
+              <li>
+                <div class="check-icon">2</div>
+                <div><strong>Typologie principale :</strong> Quels problèmes rencontrez-vous le plus souvent (voirie, déchets, lampadaires éteints, eau) ?</div>
+              </li>
+              <li>
+                <div class="check-icon">3</div>
+                <div><strong>Signalement antérieur :</strong> Avez-vous déjà essayé de signaler un problème urbain à Casablanca ?</div>
+              </li>
+              <li>
+                <div class="check-icon">4</div>
+                <div><strong>Canaux utilisés :</strong> Par quel biais avez-vous tenté ce signalement (guichet, téléphone, réseaux sociaux, Chikaya) ?</div>
+              </li>
+              <li>
+                <div class="check-icon">5</div>
+                <div><strong>Difficultés vécues :</strong> Quelles ont été les difficultés principales (lenteur, absence de réponse, démarche complexe) ?</div>
+              </li>
+              <li>
+                <div class="check-icon">6</div>
+                <div><strong>Intérêt pour une application :</strong> Seriez-vous intéressé(e) par une application mobile pour signaler une anomalie en photo et GPS ?</div>
+              </li>
+              <li>
+                <div class="check-icon">7</div>
+                <div><strong>Fonctionnalités souhaitées :</strong> Quelles fonctions jugez-vous prioritaires (géolocalisation, suivi d'avancement, notifications) ?</div>
+              </li>
+              <li>
+                <div class="check-icon">8</div>
+                <div><strong>Acteurs responsables :</strong> À qui incombe selon vous la responsabilité première de la prise en charge ?</div>
+              </li>
+              <li>
+                <div class="check-icon">9</div>
+                <div><strong>Volonté d'engagement :</strong> Seriez-vous prêt(e) à confirmer un problème déjà signalé par un autre riverain ?</div>
+              </li>
+              <li>
+                <div class="check-icon">10</div>
+                <div><strong>Conditions de confiance :</strong> Qu'est-ce qui garantirait votre utilisation régulière (rapidité d'intervention, transparence) ?</div>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         11. PLAN DE LANCEMENT EN 6 PHASES (TIMELINE ANIMÉE) & 4 KPI
+         ======================================================================= -->
+    <section id="lancement" class="section-alt">
+      <div class="container">
+        <span class="eyebrow">10 · Recommandation</span>
+        <h2>Plan de lancement progressif</h2>
+        <p class="lead">Une approche graduelle en 6 phases pour tester et adapter le service avant d'élargir le périmètre.</p>
+
+        <!-- Timeline 6 phases -->
+        <div class="timeline" id="timelineElement">
+          <div class="timeline-line"></div>
+          <div class="timeline-progress" id="timelineProgress"></div>
+
+          <div class="timeline-step">
+            <div class="step-marker">1</div>
+            <div class="card reveal">
+              <span class="tag">Phase 1</span>
+              <h3 style="margin-top: 8px;">Enquête auprès des citoyens</h3>
+              <p>Valider le besoin et les fonctionnalités prioritaires auprès d'un échantillon représentatif de Casablancais.</p>
+            </div>
+          </div>
+
+          <div class="timeline-step">
+            <div class="step-marker">2</div>
+            <div class="card reveal">
+              <span class="tag">Phase 2</span>
+              <h3 style="margin-top: 8px;">Développement d'un prototype</h3>
+              <p>Tester la solution avec des utilisateurs sur la base d'un budget initial prévisionnel de 27 000 DH.</p>
+            </div>
+          </div>
+
+          <div class="timeline-step">
+            <div class="step-marker">3</div>
+            <div class="card reveal">
+              <span class="tag">Phase 3</span>
+              <h3 style="margin-top: 8px;">Lancement dans un quartier de Casablanca</h3>
+              <p>Évaluer l'usage et la qualité des signalements dans une zone pilote délimitée.</p>
+            </div>
+          </div>
+
+          <div class="timeline-step">
+            <div class="step-marker">4</div>
+            <div class="card reveal">
+              <span class="tag">Phase 4</span>
+              <h3 style="margin-top: 8px;">Partenariat avec une commune ou un organisme</h3>
+              <p>Tester le traitement réel des signalements avec les services techniques.</p>
+            </div>
+          </div>
+
+          <div class="timeline-step">
+            <div class="step-marker">5</div>
+            <div class="card reveal">
+              <span class="tag">Phase 5</span>
+              <h3 style="margin-top: 8px;">Extension à d'autres quartiers</h3>
+              <p>Développer l'adoption locale à l'échelle de la métropole de Casablanca.</p>
+            </div>
+          </div>
+
+          <div class="timeline-step">
+            <div class="step-marker">6</div>
+            <div class="card reveal">
+              <span class="tag">Phase 6</span>
+              <h3 style="margin-top: 8px;">Extension à d'autres villes</h3>
+              <p>Élargir progressivement le marché aux autres métropoles marocaines.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4 KPI à suivre -->
+        <div class="card reveal" style="margin-top: 45px;">
+          <h3 style="margin-bottom: 20px;">KPI à suivre</h3>
+          <div class="grid g4">
+            <div class="stat-box">
+              <div style="font-size: 1.8rem; font-weight: 800; color: var(--blue);">Adoption</div>
+              <div class="stat-label">Utilisateurs inscrits</div>
+            </div>
+            <div class="stat-box">
+              <div style="font-size: 1.8rem; font-weight: 800; color: var(--emerald);">Fiabilité</div>
+              <div class="stat-label">Signalements vérifiés</div>
+            </div>
+            <div class="stat-box">
+              <div style="font-size: 1.8rem; font-weight: 800; color: var(--orange);">Efficacité</div>
+              <div class="stat-label">Taux de résolution</div>
+            </div>
+            <div class="stat-box">
+              <div style="font-size: 1.8rem; font-weight: 800; color: #6366f1;">Réactivité</div>
+              <div class="stat-label">Délai moyen d'intervention</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         12. CONCLUSION, SOURCES & LIMITES
+         ======================================================================= -->
+    <section id="conclusion">
+      <div class="container">
+        <!-- Conclusion officielle de l'étude -->
+        <div class="conclusion-banner reveal">
+          <span class="eyebrow" style="color: var(--sky); justify-content: center;">11 · Conclusion</span>
+          <h2>Conclusion</h2>
+          <p>
+            CITY EYES présente un potentiel de développement intéressant au Maroc, à condition de valider la demande, de démontrer sa valeur face aux solutions existantes et de sécuriser des partenariats opérationnels. Une application qui reçoit des signalements sans réponse risque de perdre la confiance de ses utilisateurs.
+          </p>
+        </div>
+
+        <div class="grid g2" style="margin-top: 45px; align-items: start;">
+          <!-- Sources documentaires avec liens vérifiés -->
+          <div class="card reveal">
+            <h3>Sources documentaires</h3>
+            <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 16px;">Références officielles mentionnées dans l'étude :</p>
+            <ul class="sources-list">
+              <li>
+                <strong>DataReportal — Digital 2026 Morocco :</strong><br>
+                <a href="https://datareportal.com/reports/digital-2026-morocco" target="_blank" rel="noopener noreferrer">datareportal.com/reports/digital-2026-morocco</a>
+              </li>
+              <li>
+                <strong>Portail national des réclamations Chikaya (MMSP) :</strong><br>
+                <a href="https://www.mmsp.gov.ma/" target="_blank" rel="noopener noreferrer">mmsp.gov.ma</a>
+              </li>
+              <li>
+                <strong>Casablanca City — e-Services de la Ville :</strong><br>
+                <a href="https://www.casablancacity.ma/fr/article/291/e-services-de-la-ville" target="_blank" rel="noopener noreferrer">casablancacity.ma</a>
+              </li>
+              <li>
+                <strong>CNDP — Textes et lois (Loi 09-08) :</strong><br>
+                <a href="https://www.cndp.ma/textes-et-lois/" target="_blank" rel="noopener noreferrer">cndp.ma/textes-et-lois</a>
+              </li>
+              <li>
+                <strong>Haut-Commissariat au Plan (HCP) :</strong><br>
+                <a href="https://www.hcp.ma/" target="_blank" rel="noopener noreferrer">hcp.ma</a>
+              </li>
+              <li>
+                <strong>ANRT :</strong><br>
+                <a href="https://www.anrt.ma/" target="_blank" rel="noopener noreferrer">anrt.ma</a>
+              </li>
+              <li>
+                <strong>OCDE — Revue de la politique urbaine nationale du Maroc :</strong><br>
+                <a href="https://www.oecd.org/" target="_blank" rel="noopener noreferrer">oecd.org</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Section Limites visible -->
+          <div class="card reveal limits-card" id="limites">
+            <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 12px;">
+              <span style="font-size: 1.5rem;">⚠️</span>
+              <h3>Limites de l'étude</h3>
+            </div>
+            <p style="font-size: 0.95rem; color: var(--text-muted); line-height: 1.7;">
+              Les données de demande, parts de marché, coûts, fonctionnalités exactes des concurrents et volonté de payer n'ont pas été établies par une enquête primaire dans le document de référence. Les estimations budgétaires sont indicatives. Vérifiez les données et les liens avant toute présentation académique ou professionnelle.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- =======================================================================
+       13. FOOTER OBLIGATOIRE
+       ======================================================================= -->
+  <footer>
+    <div class="container">
+      <p style="font-weight: 700; color: var(--navy);">CITY EYES · Étude de marché 2026 · Maroc – Casablanca</p>
+      <p class="footer-pill">Document de cadrage — hypothèses à valider sur le terrain</p>
+      <p style="margin-top: 12px; font-size: 0.8rem; color: var(--text-muted);">Architecture multi-fichiers moderne · HTML5 sémantique · CSS3 · JavaScript vanilla autonome.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

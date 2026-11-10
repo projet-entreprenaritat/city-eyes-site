@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="skyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0b2545"/>
+      <stop offset="60%" stop-color="#1b497c"/>
+      <stop offset="100%" stop-color="#f2a33a"/>
+    </linearGradient>
+    <linearGradient id="seaGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0a1d37"/>
+      <stop offset="100%" stop-color="#071322"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Ciel crépusculaire de Casablanca -->
+  <rect width="800" height="340" fill="url(#skyGrad)"/>
+
+  <!-- Soleil couchant -->
+  <circle cx="580" cy="270" r="45" fill="#f2a33a" opacity="0.6"/>
+
+  <!-- Mosquée Hassan II stylisée sur l'Atlantique -->
+  <!-- Plateforme sur l'eau -->
+  <rect x="220" y="270" width="280" height="40" fill="#0b2545"/>
+
+  <!-- Minaret emblématique (210m) -->
+  <rect x="260" y="80" width="46" height="200" fill="#0d2545" stroke="#8ecdf7" stroke-width="1"/>
+  <!-- Sommet du minaret avec dôme et lanterneau -->
+  <rect x="268" y="55" width="30" height="25" fill="#0b2545"/>
+  <polygon points="268,55 283,28 298,55" fill="#f2a33a"/>
+  <!-- Rayon laser pointant vers La Mecque -->
+  <line x1="283" y1="28" x2="10" y2="10" stroke="#8ecdf7" stroke-width="1.5" stroke-dasharray="6 4" opacity="0.7"/>
+
+  <!-- Grande salle des prières et toiture à double pente en tuiles vertes -->
+  <polygon points="295,200 480,200 470,270 300,270" fill="#14365d"/>
+  <polygon points="300,200 390,165 480,200" fill="#10b981"/>
+
+  <!-- Arches et moucharabiehs -->
+  <path d="M 330,270 A 15,15 0 0 1 360,270 M 380,270 A 15,15 0 0 1 410,270 M 430,270 A 15,15 0 0 1 460,270" stroke="#8ecdf7" stroke-width="2" fill="none"/>
+
+  <!-- Océan Atlantique & vagues côtières -->
+  <rect y="310" width="800" height="190" fill="url(#seaGrad)"/>
+  <path d="M 0,330 Q 200,320 400,335 T 800,330" stroke="rgba(142, 205, 247, 0.3)" stroke-width="2" fill="none"/>
+  <path d="M 0,370 Q 250,355 500,375 T 800,365" stroke="rgba(142, 205, 247, 0.2)" stroke-width="1.5" fill="none"/>
+
+  <!-- Corniche piétonne au premier plan -->
+  <rect y="440" width="800" height="60" fill="#0b2545"/>
+  <line x1="0" y1="440" x2="800" y2="440" stroke="#f2a33a" stroke-width="3"/>
+  <text x="30" y="475" fill="#ffffff" font-family="system-ui, sans-serif" font-size="13" font-weight="700">Casablanca · Front de mer et Mosquée Hassan II</text>
+  <text x="30" y="490" fill="#8ecdf7" font-family="system-ui, sans-serif" font-size="10">Illustration libre vectorielle · Contexte d'étude CITY EYES</text>
+</svg>
