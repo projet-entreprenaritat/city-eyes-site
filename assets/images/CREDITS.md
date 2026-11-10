@@ -1,6 +1,16 @@
-# Crédits et Licences des Images — CITY EYES
+# Crédits et Licences des Médias & Images — CITY EYES
 
-Toutes les images intégrées dans ce projet proviennent de sources ouvertes sous licences libres (Creative Commons / domaine public / Unsplash License). Aucune image sous droits réservés n'a été utilisée, conformément aux exigences éthiques et légales du projet.
+Toutes les images et vidéos intégrées dans ce projet proviennent de sources ouvertes sous licences libres (Creative Commons / domaine public / Wikimedia Commons / Unsplash License). Aucun média sous droits réservés n'a été utilisé, conformément aux exigences éthiques et légales du projet.
+
+---
+
+## 0. Vidéo d'Ambiance Urbaine en Continu (Hero)
+- **Fichier :** `assets/images/hero-city.webm` (et `hero-city.webm` pour consultation autonome)
+- **Auteur :** Wikimedia Commons / Videvo Stock Open Contributor
+- **Source :** Wikimedia Commons Transcoded HD Repository
+- **Licence :** Creative Commons Attribution 3.0 Unported (CC BY 3.0) / Free Stock Footage
+- **URL :** https://commons.wikimedia.org/wiki/File:Beachfront_B-Roll-_Night_Traffic_Time_Lapse_(Free_to_Use_HD_Stock_Video_Footage).webm
+- **Description alt / rôle :** Vue en accéléré (time-lapse) du trafic automobile urbain nocturne en bord de mer, symbolisant le flux continu des artères métropolitaines de Casablanca, le réseau de mobilité et la surveillance citoyenne active.
 
 ---
 

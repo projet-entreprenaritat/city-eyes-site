@@ -166,3 +166,30 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 });
+
+
+  /* 9. Contrôle de la vidéo urbaine du hero */
+  const heroVideo = document.getElementById('heroVideo');
+  const videoBtn = document.getElementById('videoToggleBtn');
+  if (heroVideo && videoBtn) {
+    if (prefersReducedMotion) {
+      try { heroVideo.pause(); } catch(e){}
+      const icon = videoBtn.querySelector('.ctrl-icon'), lbl = videoBtn.querySelector('.ctrl-label');
+      if (icon) icon.textContent = '▶';
+      if (lbl) lbl.textContent = 'Lire';
+    }
+
+    videoBtn.addEventListener('click', () => {
+      const icon = videoBtn.querySelector('.ctrl-icon'), lbl = videoBtn.querySelector('.ctrl-label');
+      if (heroVideo.paused) {
+        heroVideo.play().then(() => {
+          if (icon) icon.textContent = '⏸';
+          if (lbl) lbl.textContent = 'Pause';
+        }).catch(err => console.log('Autoplay policy prevented video playback:', err));
+      } else {
+        heroVideo.pause();
+        if (icon) icon.textContent = '▶';
+        if (lbl) lbl.textContent = 'Lire';
+      }
+    });
+  }

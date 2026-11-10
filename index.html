@@ -77,8 +77,18 @@
          1. HERO SECTION
          ======================================================================= -->
     <section class="hero" id="hero">
+      <!-- Dynamic Real City Video Background -->
+      <div class="hero-video-wrapper" aria-hidden="true">
+        <video id="heroVideo" class="hero-bg-video" autoplay muted loop playsinline preload="auto">
+          <source src="assets/images/hero-city.webm" type="video/webm">
+          <source src="https://upload.wikimedia.org/wikipedia/commons/transcoded/0/08/Beachfront_B-Roll-_Night_Traffic_Time_Lapse_%28Free_to_Use_HD_Stock_Video_Footage%29.webm/Beachfront_B-Roll-_Night_Traffic_Time_Lapse_%28Free_to_Use_HD_Stock_Video_Footage%29.webm.720p.vp9.webm" type="video/webm">
+        </video>
+        <div class="hero-video-overlay"></div>
+        <div class="hero-grid-lines"></div>
+      </div>
+
+      <!-- Canvas Radar sweep on top of video -->
       <canvas id="radar-canvas" aria-hidden="true"></canvas>
-      <div class="hero-glow" aria-hidden="true"></div>
 
       <div class="container">
         <div class="hero-content reveal in">
@@ -96,46 +106,68 @@
         </div>
 
         <div class="hero-visual reveal in">
-          <!-- Logo SVG animé officiel CITY EYES -->
-          <svg class="eye-device" viewBox="0 0 420 320" role="img" aria-label="Logo CITY EYES avec faisceau scanner vertical, pupille radar pulsante et repère GPS">
-            <defs>
-              <linearGradient id="eyeStrokeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                <stop offset="0%" stop-color="#2f80ed"/>
-                <stop offset="50%" stop-color="#8ecdf7"/>
-                <stop offset="100%" stop-color="#0b2545"/>
-              </linearGradient>
-              <linearGradient id="pinGrad" x1="0%" y1="0%" x2="0%" y2="100%">
-                <stop offset="0%" stop-color="#f2a33a"/>
-                <stop offset="100%" stop-color="#d97706"/>
-              </linearGradient>
-              <clipPath id="eyeMask">
-                <path d="M 30,160 C 90,60 210,30 210,30 C 210,30 330,60 390,160 C 330,260 210,290 210,290 C 210,290 90,260 30,160 Z"/>
-              </clipPath>
-            </defs>
+          <div class="hero-visual-card">
+            <div class="telemetry-pill tele-top">
+              <span class="tele-dot green"></span>
+              <span>IA de Priorisation · Casablanca</span>
+            </div>
+            <!-- Logo SVG animé officiel CITY EYES -->
+            <svg class="eye-device" viewBox="0 0 420 320" role="img" aria-label="Logo CITY EYES avec faisceau scanner vertical, pupille radar pulsante et repère GPS">
+              <defs>
+                <linearGradient id="eyeStrokeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#2f80ed"/>
+                  <stop offset="50%" stop-color="#8ecdf7"/>
+                  <stop offset="100%" stop-color="#0b2545"/>
+                </linearGradient>
+                <linearGradient id="pinGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                  <stop offset="0%" stop-color="#f2a33a"/>
+                  <stop offset="100%" stop-color="#d97706"/>
+                </linearGradient>
+                <clipPath id="eyeMask">
+                  <path d="M 30,160 C 90,60 210,30 210,30 C 210,30 330,60 390,160 C 330,260 210,290 210,290 C 210,290 90,260 30,160 Z"/>
+                </clipPath>
+              </defs>
 
-            <!-- Contour de l'œil scanner -->
-            <path d="M 30,160 C 90,60 210,30 210,30 C 210,30 330,60 390,160 C 330,260 210,290 210,290 C 210,290 90,260 30,160 Z"
-                  fill="none" stroke="url(#eyeStrokeGrad)" stroke-width="14" stroke-linejoin="round"/>
+              <!-- Contour de l'œil scanner -->
+              <path d="M 30,160 C 90,60 210,30 210,30 C 210,30 330,60 390,160 C 330,260 210,290 210,290 C 210,290 90,260 30,160 Z"
+                    fill="none" stroke="url(#eyeStrokeGrad)" stroke-width="14" stroke-linejoin="round"/>
 
-            <!-- Effet radar dans la pupille -->
-            <g clip-path="url(#eyeMask)">
-              <circle cx="210" cy="160" r="110" fill="none" stroke="rgba(47, 128, 237, 0.2)" stroke-width="1.5"/>
-              <circle cx="210" cy="160" r="75" fill="none" stroke="rgba(47, 128, 237, 0.3)" stroke-width="1.5"/>
-              <circle class="radar-pulse-ring" cx="210" cy="160" r="40" fill="none" stroke="#f2a33a"/>
-              <!-- Faisceau de balayage lumineux vertical -->
-              <rect class="scan-line" x="20" y="157" width="380" height="6" fill="rgba(142, 205, 247, 0.85)" filter="drop-shadow(0 0 10px #8ecdf7)"/>
-            </g>
+              <!-- Effet radar dans la pupille -->
+              <g clip-path="url(#eyeMask)">
+                <circle cx="210" cy="160" r="110" fill="none" stroke="rgba(47, 128, 237, 0.2)" stroke-width="1.5"/>
+                <circle cx="210" cy="160" r="75" fill="none" stroke="rgba(47, 128, 237, 0.3)" stroke-width="1.5"/>
+                <circle class="radar-pulse-ring" cx="210" cy="160" r="40" fill="none" stroke="#f2a33a"/>
+                <!-- Faisceau de balayage lumineux vertical -->
+                <rect class="scan-line" x="20" y="157" width="380" height="6" fill="rgba(142, 205, 247, 0.85)" filter="drop-shadow(0 0 10px #8ecdf7)"/>
+              </g>
 
-            <!-- Repère GPS urbain central -->
-            <g transform="translate(0, -10)">
-              <path d="M 210,95 C 185,95 165,115 165,140 C 165,175 210,225 210,225 C 210,225 255,175 255,140 C 255,115 235,95 210,95 Z"
-                    fill="url(#pinGrad)" filter="drop-shadow(0 6px 14px rgba(242, 163, 58, 0.45))"/>
-              <circle cx="210" cy="138" r="15" fill="#ffffff"/>
-              <circle cx="210" cy="138" r="7" fill="#0b2545"/>
-              <circle class="ping-dot" cx="210" cy="138" r="12" fill="none" stroke="#ffffff" stroke-width="2"/>
-            </g>
-          </svg>
+              <!-- Repère GPS urbain central -->
+              <g transform="translate(0, -10)">
+                <path d="M 210,95 C 185,95 165,115 165,140 C 165,175 210,225 210,225 C 210,225 255,175 255,140 C 255,115 235,95 210,95 Z"
+                      fill="url(#pinGrad)" filter="drop-shadow(0 6px 14px rgba(242, 163, 58, 0.45))"/>
+                <circle cx="210" cy="138" r="15" fill="#ffffff"/>
+                <circle cx="210" cy="138" r="7" fill="#0b2545"/>
+                <circle class="ping-dot" cx="210" cy="138" r="12" fill="none" stroke="#ffffff" stroke-width="2"/>
+              </g>
+            </svg>
+            <div class="telemetry-bottom-row">
+              <div class="telemetry-pill">
+                <span class="tele-icon">📍</span> 33.5731° N, 7.5898° W
+              </div>
+              <div class="telemetry-pill">
+                <span class="tele-icon">⚡</span> 7 Catégories Urbaines
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
+
+      <!-- Floating Video Control Bar -->
+      <div class="hero-video-bar" role="toolbar" aria-label="Contrôles du flux vidéo urbain">
+        <span class="live-indicator"><span class="live-dot"></span> CASABLANCA · DIRECT 2026</span>
+        <button type="button" id="videoToggleBtn" class="video-ctrl-btn" aria-label="Mettre en pause la vidéo">
+          <span class="ctrl-icon">⏸</span> <span class="ctrl-label">Pause</span>
+        </button>
       </div>
     </section>
 
