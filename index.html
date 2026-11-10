@@ -214,6 +214,21 @@
       </div>
     </section>
 
+    <!-- ==========================================================================
+         CONTEXTE PHOTO RÉEL CASABLANCA
+         ========================================================================== -->
+    <section id="contexte-photo" style="padding: 0 0 60px;">
+      <div class="container">
+        <figure class="reveal" style="position: relative; border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow);">
+          <img src="assets/images/casablanca-vue-aerienne.jpg" alt="Vue aérienne de Casablanca avec la mosquée Hassan II et le front de mer" loading="lazy" style="width: 100%; height: auto; max-height: 480px; object-fit: cover; display: block; filter: saturate(1.1);">
+          <figcaption style="position: absolute; left: 0; right: 0; bottom: 0; padding: 32px 24px 18px; background: linear-gradient(transparent, rgba(11,37,69,0.92)); color: #ffffff; font-weight: 700; font-size: 1.05rem;">
+            📍 Casablanca — Métropole en mutation : modernisation urbaine, front de mer et gestion proactive des infrastructures
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+
     <!-- =======================================================================
          3. PRÉSENTATION : 4 GESTES & 7 CATÉGORIES
          ======================================================================= -->
@@ -252,43 +267,67 @@
         <p class="lead" style="margin-bottom: 24px;">Les typologies de signalements urbains identifiées dans l'étude :</p>
 
         <div class="grid g4 stagger-group">
-          <div class="card">
-            <img src="assets/images/voirie-nids-de-poule.svg" alt="Illustration voirie : nid-de-poule" width="280" height="180" loading="lazy" style="border-radius: var(--radius-sm); margin-bottom: 12px;">
+          <!-- 1. Voirie -->
+          <div class="card problem-card">
+            <div style="overflow:hidden; border-radius: var(--radius-sm); margin-bottom: 14px;">
+              <img src="assets/images/voirie-nid-de-poule.jpg" alt="Nid-de-poule et chaussée dégradée" width="280" height="170" loading="lazy" style="width:100%; height:170px; object-fit:cover; transition: transform .4s ease;">
+            </div>
             <span class="tag">Voirie</span>
-            <p style="margin-top: 8px; font-weight: 600;">Nids-de-poule, routes dégradées</p>
+            <p style="margin-top: 8px; font-weight: 700;">Nids-de-poule, chaussées et routes dégradées</p>
           </div>
 
-          <div class="card">
-            <img src="assets/images/proprete-dechets-urbains.svg" alt="Illustration propreté : déchets urbains" width="280" height="180" loading="lazy" style="border-radius: var(--radius-sm); margin-bottom: 12px;">
+          <!-- 2. Propreté -->
+          <div class="card problem-card">
+            <div style="overflow:hidden; border-radius: var(--radius-sm); margin-bottom: 14px;">
+              <img src="assets/images/proprete-dechets.jpg" alt="Déchets et dépôts sur trottoir" width="280" height="170" loading="lazy" style="width:100%; height:170px; object-fit:cover; transition: transform .4s ease;">
+            </div>
             <span class="tag">Propreté</span>
-            <p style="margin-top: 8px; font-weight: 600;">Déchets abandonnés, dépôts sauvages</p>
+            <p style="margin-top: 8px; font-weight: 700;">Déchets abandonnés, dépôts sauvages</p>
           </div>
 
-          <div class="card">
-            <img src="assets/images/eclairage-public-panne.svg" alt="Illustration éclairage : lampadaire éteint" width="280" height="180" loading="lazy" style="border-radius: var(--radius-sm); margin-bottom: 12px;">
+          <!-- 3. Éclairage -->
+          <div class="card problem-card">
+            <div style="overflow:hidden; border-radius: var(--radius-sm); margin-bottom: 14px;">
+              <img src="assets/images/eclairage-panne.jpg" alt="Intervention éclairage public nocturne" width="280" height="170" loading="lazy" style="width:100%; height:170px; object-fit:cover; transition: transform .4s ease;">
+            </div>
             <span class="tag">Éclairage</span>
-            <p style="margin-top: 8px; font-weight: 600;">Lampadaires défectueux</p>
+            <p style="margin-top: 8px; font-weight: 700;">Lampadaires en panne, zones obscures</p>
           </div>
 
-          <div class="card">
-            <img src="assets/images/fuite-eau-voirie.svg" alt="Illustration eau : fuite sur chaussée" width="280" height="180" loading="lazy" style="border-radius: var(--radius-sm); margin-bottom: 12px;">
-            <span class="tag">Eau</span>
-            <p style="margin-top: 8px; font-weight: 600;">Fuites d'eau sur le réseau</p>
-          </div>
-
-          <div class="card">
+          <!-- 4. Eau / Fuite -->
+          <div class="card problem-card">
+            <div style="overflow:hidden; border-radius: var(--radius-sm); margin-bottom: 14px;">
+              <img src="assets/images/assainissement-inondation.jpg" alt="Inondation de chaussée et canalisation" width="280" height="170" loading="lazy" style="width:100%; height:170px; object-fit:cover; transition: transform .4s ease;">
+            </div>
             <span class="tag">Assainissement</span>
-            <p style="margin-top: 10px; font-weight: 600;">Canalisations bouchées, inondations de chaussée</p>
+            <p style="margin-top: 8px; font-weight: 700;">Canalisations bouchées, inondations</p>
           </div>
 
-          <div class="card">
+          <!-- 5. Trottoirs -->
+          <div class="card problem-card">
+            <div style="overflow:hidden; border-radius: var(--radius-sm); margin-bottom: 14px;">
+              <img src="assets/images/trottoirs-degrades.jpg" alt="Trottoir avec dalles arrachées" width="280" height="170" loading="lazy" style="width:100%; height:170px; object-fit:cover; transition: transform .4s ease;">
+            </div>
+            <span class="tag">Trottoirs</span>
+            <p style="margin-top: 8px; font-weight: 700;">Dalles cassées, trottoirs impraticables</p>
+          </div>
+
+          <!-- 6. Mobilier urbain -->
+          <div class="card problem-card">
+            <div style="overflow:hidden; border-radius: var(--radius-sm); margin-bottom: 14px;">
+              <img src="assets/images/mobilier-urbain-abri.jpg" alt="Mobilier urbain et abribus endommagé" width="280" height="170" loading="lazy" style="width:100%; height:170px; object-fit:cover; transition: transform .4s ease;">
+            </div>
             <span class="tag">Mobilier urbain</span>
-            <p style="margin-top: 10px; font-weight: 600;">Bancs cassés, panneaux endommagés</p>
+            <p style="margin-top: 8px; font-weight: 700;">Bancs cassés, abribus et panneaux détériorés</p>
           </div>
 
-          <div class="card" style="grid-column: span 2;">
-            <span class="tag">Espaces verts & Trottoirs</span>
-            <p style="margin-top: 10px; font-weight: 600;">Arbres dangereux, espaces dégradés, trottoirs impraticables</p>
+          <!-- 7. Espaces verts -->
+          <div class="card problem-card" style="grid-column: span 2;">
+            <div style="overflow:hidden; border-radius: var(--radius-sm); margin-bottom: 14px;">
+              <img src="assets/images/espaces-verts-parc.jpg" alt="Parc urbain et végétation" width="280" height="170" loading="lazy" style="width:100%; height:170px; object-fit:cover; transition: transform .4s ease;">
+            </div>
+            <span class="tag">Espaces verts</span>
+            <p style="margin-top: 8px; font-weight: 700;">Arbres dangereux, espaces verts dégradés</p>
           </div>
         </div>
 
